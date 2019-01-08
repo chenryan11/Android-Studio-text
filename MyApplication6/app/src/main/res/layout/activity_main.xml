@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/Redsb"
+        android:layout_width="246dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:max="255"
+        android:progress="0"
+        android:progressDrawable="@drawable/red_seekbar_progress"
+        android:thumb="@drawable/red_thumble_drawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />thumble_drawable
+
+    <SeekBar
+        android:id="@+id/Greensb"
+        android:layout_width="246dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:max="255"
+        android:progress="0"
+        android:progressDrawable="@drawable/green_seekbar_progress"
+        android:thumb="@drawable/green_thumble_drawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Redsb" />
+
+    <SeekBar
+        android:id="@+id/Bluesb"
+        android:layout_width="246dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:max="255"
+        android:progress="0"
+        android:progressDrawable="@drawable/blue_seekbar_progress"
+        android:thumb="@drawable/blue_thumble_drawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Greensb" />
+
+    <TextView
+        android:id="@+id/Redv"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="50dp"
+        android:text="Value:0"
+        app:layout_constraintStart_toEndOf="@+id/Redsb"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Greenv"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="50dp"
+        android:text="Value:0"
+        app:layout_constraintStart_toEndOf="@+id/Greensb"
+        app:layout_constraintTop_toBottomOf="@+id/Redv" />
+
+    <TextView
+        android:id="@+id/Bluev"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="50dp"
+        android:text="Value:0"
+        app:layout_constraintStart_toEndOf="@+id/Bluesb"
+        app:layout_constraintTop_toBottomOf="@+id/Greenv" />
+
+    <TextView
+        android:id="@+id/tvcolor"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="332dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
